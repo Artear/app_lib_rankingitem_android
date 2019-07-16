@@ -1,7 +1,13 @@
-# Base
-Base Library
+# Category Item
+Category Item Library
 
-- Library for clone and have ready a library framework for start to work
+- Library for draw a category in a stevedore views
+
+
+Version 
+--------
+
+[![Latest Version](https://api.bintray.com/packages/artearmobile/Android/Ranking-Item/images/download.svg)](https://bintray.com/artearmobile/Android/Ranking-Item/_latestVersion)
 
 
 Download
@@ -9,16 +15,17 @@ Download
 via Maven:
 ```xml
 <dependency>
-  <groupId>com.artear</groupId>
-  <artifactId>library</artifactId>
+  <groupId>com.artear.stevedore</groupId>
+  <artifactId>rankingitem</artifactId>
   <version>0.0.1</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'com.artear:library:0.0.1'
+implementation 'com.artear.stevedore:rankingitem:0.0.1'
 ```
 Lib requires at minimum Java 7 or Android 4.1.
+
 
 License
 =======
