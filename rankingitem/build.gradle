@@ -20,10 +20,10 @@ plugins {
 
 ext {
     bintrayRepo = 'Android'
-    bintrayName = 'Rankingitem'
+    bintrayName = 'Ranking-Item'
 
-    publishedGroupId = 'com.artear.rankingitem'
-    libraryName = 'Rankingitem'
+    publishedGroupId = 'com.artear.stevedore'
+    libraryName = 'Ranking-Item'
     artifact = 'rankingitem'
 
     libraryDescription = 'Rankingitem sample library'
