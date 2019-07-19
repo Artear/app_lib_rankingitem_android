@@ -4,27 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="62dp">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/rankingItemTitle"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|top"
+        android:id="@+id/rankingItemNumber"
+        style="@style/rankingItemNumber"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|start"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_height="105dp"
-        tools:padding="21dp" />
+        tools:text="@tools:sample/date/hhmm" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/rankingItemDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintLeft_toRightOf="@id/rankingItemTitle"
+        style="@style/rankingItemDescription"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical|start"
+        app:layout_constraintLeft_toRightOf="@id/rankingItemNumber"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_height="105dp"
-        tools:padding="21dp" />
+        tools:text="@tools:sample/lorem/random" />
 
     <View
         android:layout_width="match_parent"
