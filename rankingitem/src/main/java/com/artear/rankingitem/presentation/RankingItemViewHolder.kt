@@ -25,19 +25,25 @@ import kotlinx.android.synthetic.main.rankingitem_view_holder.view.*
 
 
 class RankingItemViewHolder(itemView: View) :
-        RecyclerView.ViewHolder(itemView), ArtearViewHolder<RankingItemData<BoxStyle>> {
+    RecyclerView.ViewHolder(itemView), ArtearViewHolder<RankingItemData<BoxStyle>> {
 
     override fun bind(model: RankingItemData<BoxStyle>, artearItemDecoration: ArtearItemDecoration) {
         itemView.apply {
-            rankingItemTitle.text = model.title
+            rankingItemNumber.text = model.title
             model.style.background?.color?.let {
                 rootLayout.setBackgroundColor(Color.parseColor(it.light))
             }
             model.style.title?.color?.let {
-                rankingItemTitle.setTextColor(Color.parseColor(it.light))
+                rankingItemNumber.setTextColor(Color.parseColor(it.light))
             }
+            rankingItemDescription.text = model.description
+            model.style.background?.color?.let {
+                rootLayout.setBackgroundColor(Color.parseColor(it.light))
+            }
+            model.style.description?.color?.let {
+                rankingItemDescription.setTextColor(Color.parseColor(it.light))
+            }
+
         }
-
     }
-
 }
