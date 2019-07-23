@@ -1,4 +1,4 @@
-package com.artear.rankingitem
+package com.artear.stevedore.rankingitem
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
