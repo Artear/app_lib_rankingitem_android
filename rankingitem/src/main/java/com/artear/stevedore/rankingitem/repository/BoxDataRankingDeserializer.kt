@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.artear.rankingitem.repository
+package com.artear.stevedore.rankingitem.repository
 
 import com.google.gson.JsonDeserializationContext
 import com.google.gson.JsonDeserializer

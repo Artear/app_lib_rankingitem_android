@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.rankingitem.presentation
+package com.artear.stevedore.rankingitem.presentation
 
 import android.graphics.Color
 import android.view.View

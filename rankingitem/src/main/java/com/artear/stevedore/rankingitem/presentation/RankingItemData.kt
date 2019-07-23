@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.rankingitem.presentation
+package com.artear.stevedore.rankingitem.presentation
 
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearObject
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearStyle
 
 data class RankingItemData<T : ArtearStyle>(
-        val title: String,
-        val description: String,
-        val style: T) : ArtearObject<T>()
+    val title: String,
+    val description: String,
+    val style: T
+) : ArtearObject<T>()

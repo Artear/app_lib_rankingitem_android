@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.rankingitem.presentation
+package com.artear.stevedore.rankingitem.presentation
 
 import com.artear.domain.coroutine.DataShaper
-import com.artear.rankingitem.repository.BoxDataRanking
+import com.artear.stevedore.rankingitem.repository.BoxDataRanking
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItem
 import com.artear.stevedore.stevedoreitems.presentation.model.ArtearItemDecoration
 import com.artear.stevedore.stevedoreitems.repository.model.box.Box
@@ -28,9 +28,9 @@ class RankingItemShaper : DataShaper<Box, ArtearItem> {
         val boxDataRanking = (input.data as BoxDataRanking)
 
         val data = RankingItemData(
-                boxDataRanking.title,
-                boxDataRanking.description,
-                input.style
+            boxDataRanking.title,
+            boxDataRanking.description,
+            input.style
         )
 
         return ArtearItem(data, ArtearItemDecoration())

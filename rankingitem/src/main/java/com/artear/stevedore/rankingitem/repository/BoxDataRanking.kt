@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.rankingitem.repository
+package com.artear.stevedore.rankingitem.repository
 
 import com.artear.stevedore.stevedoreitems.repository.model.box.BoxData
 import com.google.gson.annotations.JsonAdapter
 
 @JsonAdapter(BoxDataRankingDeserializer::class)
 data class BoxDataRanking(
-        val title: String,
-        val description: String
+    val title: String,
+    val description: String
 ) : BoxData()

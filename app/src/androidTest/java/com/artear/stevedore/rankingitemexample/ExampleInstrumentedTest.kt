@@ -1,4 +1,4 @@
-package com.artear.rankingitemexample
+package com.artear.stevedore.rankingitemexample
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().context
-        assertEquals("com.artear.rankingitemexample", appContext.packageName)
+        assertEquals("com.artear.stevedore.rankingitemexample", appContext.packageName)
     }
 }

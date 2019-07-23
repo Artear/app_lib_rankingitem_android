@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.artear.rankingitem.presentation
+package com.artear.stevedore.rankingitem.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.artear.rankingitem.R
+import com.artear.stevedore.rankingitem.R
 
 import com.artear.stevedore.stevedoreitems.presentation.contract.ArtearViewHolder
 import com.artear.stevedore.stevedoreitems.presentation.contract.ItemAdapter
@@ -41,8 +41,10 @@ class RankingItemAdapter : ItemAdapter<RankingItemData<*>> {
         return viewHolder ?: RankingItemViewHolder(view)
     }
 
-    override fun onBindViewHolderBase(holder: ArtearViewHolder<RankingItemData<*>>,
-                                      model: RankingItemData<*>, artearItemDecoration: ArtearItemDecoration) {
+    override fun onBindViewHolderBase(
+        holder: ArtearViewHolder<RankingItemData<*>>,
+        model: RankingItemData<*>, artearItemDecoration: ArtearItemDecoration
+    ) {
         holder.bind(model, artearItemDecoration)
     }
 }
