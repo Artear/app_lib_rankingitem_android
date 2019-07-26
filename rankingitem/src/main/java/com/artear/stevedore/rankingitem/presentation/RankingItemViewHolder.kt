@@ -30,6 +30,13 @@ class RankingItemViewHolder(itemView: View) :
     override fun bind(model: RankingItemData<BoxStyle>, artearItemDecoration: ArtearItemDecoration) {
         itemView.apply {
             rankingItemNumber.text = model.title
+            rankingItemNumber.underlineEnabled = false
+            model.style.title?.underline?.color?.let {
+                rankingItemNumber.underlineEnabled = true
+                rankingItemNumber.underLineColor = Color.parseColor(it.light)
+                rankingItemNumber.underlineWidth = 8f
+                rankingItemNumber.underlineSeparation = -2f
+            }
             model.style.background?.color?.let {
                 rootLayout.setBackgroundColor(Color.parseColor(it.light))
             }
