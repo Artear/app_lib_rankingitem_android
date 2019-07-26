@@ -45,12 +45,12 @@ buildscript {
                         extJunit        : "androidx.test.ext:junit:${versionLib.androidx.extJunitVersion}",
                         recyclerview    : "androidx.recyclerview:recyclerview:${versionLib.androidx.recyclerviewVersion}",
                         testRunner      : "androidx.test:runner:${versionLib.androidx.testRunnerVersion}",
-                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}",
-                        uiView          : "com.artear.ui:view:${versionLib.artear.uiViewVersion}",
+                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}"
                 ],
                 artear  : [
                         domain        : "com.artear.domain:domain:${versionLib.artear.domainVersion}",
-                        stevedoreItems: "com.artear.stevedore:stevedoreitems:${versionLib.artear.stevedoreItemsVersion}"
+                        stevedoreItems: "com.artear.stevedore:stevedoreitems:${versionLib.artear.stevedoreItemsVersion}",
+                        uiView          : "com.artear.ui:view:${versionLib.artear.uiViewVersion}"
                 ],
                 espresso: [
                         core: "androidx.test.espresso:espresso-core:${versionLib.espresso.coreVersion}"
