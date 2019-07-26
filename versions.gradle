@@ -18,7 +18,8 @@ buildscript {
                 ],
                 artear       : [
                         domainVersion        : "0.0.8",
-                        stevedoreItemsVersion: "0.2.10"
+                        stevedoreItemsVersion: "0.2.10",
+                        uiViewVersion        : "0.2.4"
                 ],
                 espresso     : [
                         coreVersion: "3.2.0"
@@ -44,7 +45,8 @@ buildscript {
                         extJunit        : "androidx.test.ext:junit:${versionLib.androidx.extJunitVersion}",
                         recyclerview    : "androidx.recyclerview:recyclerview:${versionLib.androidx.recyclerviewVersion}",
                         testRunner      : "androidx.test:runner:${versionLib.androidx.testRunnerVersion}",
-                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}"
+                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}",
+                        uiView          : "com.artear.ui:view:${versionLib.artear.uiViewVersion}",
                 ],
                 artear  : [
                         domain        : "com.artear.domain:domain:${versionLib.artear.domainVersion}",
