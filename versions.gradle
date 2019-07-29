@@ -4,61 +4,77 @@ buildscript {
         buildToolsVersion = "28.0.3"
         libraryVersion = '0.0.1'
         versionLib = [
-                kotlinVersion   : '1.3.41',
-                android         : [
+                kotlinVersion: '1.3.41',
+                android      : [
                         gradleBuildToolsVersion: '3.4.2'
                 ],
-                espresso        : [
-                        coreVersion: "3.2.0"
-                ],
-                junitVersion    : "4.12",
-                androidx        : [
+                androidx     : [
                         appCompatVersion       : "1.0.2",
                         constraintLayoutVersion: "1.1.3",
+                        extJunitVersion        : "1.1.1",
+                        recyclerviewVersion    : "1.0.0",
                         testRunnerVersion      : "1.2.0",
-                        testCoreVersion        : "1.2.0",
-                        extJunitVersion        : "1.1.1"
+                        testCoreVersion        : "1.2.0"
                 ],
-                timberVersion   : "4.7.1",
-                plugin          : [
+                artear       : [
+                        domainVersion        : "0.0.8",
+                        stevedoreItemsVersion: "0.2.10",
+                        uiViewVersion        : "0.2.4"
+                ],
+                espresso     : [
+                        coreVersion: "3.2.0"
+                ],
+                gsonVersion  : "2.8.5",
+                junitVersion : "4.12",
+                plugin       : [
                         depCheckerVersion: "0.21.0",
                         bintrayVersion   : "1.8.4",
                         dokkaVersion     : "0.9.18",
                         dcendentsVersion : "2.1"
-                ]
+                ],
+                timberVersion: "4.7.1"
         ]
 
         lib = [
-                kotlin   : [
+                android : [
+                        toolsBuildGradle: "com.android.tools.build:gradle:${versionLib.android.gradleBuildToolsVersion}"
+                ],
+                androidx: [
+                        appcompat       : "androidx.appcompat:appcompat:${versionLib.androidx.appCompatVersion}",
+                        constraintLayout: "androidx.constraintlayout:constraintlayout:${versionLib.androidx.constraintLayoutVersion}",
+                        extJunit        : "androidx.test.ext:junit:${versionLib.androidx.extJunitVersion}",
+                        recyclerview    : "androidx.recyclerview:recyclerview:${versionLib.androidx.recyclerviewVersion}",
+                        testRunner      : "androidx.test:runner:${versionLib.androidx.testRunnerVersion}",
+                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}"
+                ],
+                artear  : [
+                        domain        : "com.artear.domain:domain:${versionLib.artear.domainVersion}",
+                        stevedoreItems: "com.artear.stevedore:stevedoreitems:${versionLib.artear.stevedoreItemsVersion}",
+                        uiView          : "com.artear.ui:view:${versionLib.artear.uiViewVersion}"
+                ],
+                espresso: [
+                        core: "androidx.test.espresso:espresso-core:${versionLib.espresso.coreVersion}"
+                ],
+                gson    : [
+                        library: "com.google.code.gson:gson:${versionLib.gsonVersion}"
+                ],
+                junit   : [
+                        library: "junit:junit:${versionLib.junitVersion}"
+                ],
+                kotlin  : [
                         plugin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versionLib.kotlinVersion}",
                         standardLib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versionLib.kotlinVersion}"
                 ],
-                android  : [
-                        toolsBuildGradle: "com.android.tools.build:gradle:${versionLib.android.gradleBuildToolsVersion}"
-                ],
-                espresso : [
-                        core: "androidx.test.espresso:espresso-core:${versionLib.espresso.coreVersion}"
-                ],
-                junit    : [
-                        library: "junit:junit:${versionLib.junitVersion}"
-                ],
-                material : [
+                material: [
                         library: "com.google.android.material:material:${versionLib.materialVersion}"
                 ],
-                androidx : [
-                        appcompat       : "androidx.appcompat:appcompat:${versionLib.androidx.appCompatVersion}",
-                        constraintLayout: "androidx.constraintlayout:constraintlayout:${versionLib.androidx.constraintLayoutVersion}",
-                        testRunner      : "androidx.test:runner:${versionLib.androidx.testRunnerVersion}",
-                        testCore        : "androidx.test:core:${versionLib.androidx.testCoreVersion}",
-                        extJunit        : "androidx.test.ext:junit:${versionLib.androidx.extJunitVersion}"
-                ],
-                timber   : [
-                        library: "com.jakewharton.timber:timber:${versionLib.timberVersion}"
-                ],
-                plugin   : [
+                plugin  : [
                         bintray  : "com.jfrog.bintray.gradle:gradle-bintray-plugin:${versionLib.plugin.bintrayVersion}",
                         dcendents: "com.github.dcendents:android-maven-gradle-plugin:${versionLib.plugin.dcendentsVersion}",
                         dokka    : "org.jetbrains.dokka:dokka-android-gradle-plugin:${versionLib.plugin.dokkaVersion}"
+                ],
+                timber  : [
+                        library: "com.jakewharton.timber:timber:${versionLib.timberVersion}"
                 ]
         ]
     }

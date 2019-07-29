@@ -90,12 +90,27 @@ dependencies {
 
     //Kotlin
     implementation lib.kotlin.standardLib
+
+    //Gson
+    implementation lib.gson.library
+
+    //AndroidX
+    implementation lib.androidx.appcompat
+    implementation lib.androidx.recyclerview
+    implementation lib.androidx.constraintLayout
+
+    //Artear
+    implementation lib.artear.uiView
+    implementation lib.artear.stevedoreItems
+    implementation lib.artear.domain
+
 }
 
 dependencyUpdates.resolutionStrategy {
     componentSelection { rules ->
         rules.all { ComponentSelection selection ->
-            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm', 'preview', 'b', 'ea'].any { qualifier ->
+            boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm',
+                                'preview', 'b', 'ea'].any { qualifier ->
                 selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-+]*/
             }
             if (rejected) {

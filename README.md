@@ -1,7 +1,7 @@
-# Category Item
-Category Item Library
+# Ranking Item
+Ranking Item Library
 
-- Library for draw a category in a stevedore views
+- Library for draw a Ranking in a stevedore views
 
 
 Version 
